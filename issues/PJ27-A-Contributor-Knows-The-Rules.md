@@ -39,21 +39,33 @@ like here, or which of the ten repositories their change belongs in.
   6. **Pull requests and review** - who reviews, how a change from outside is taken in, signing.
   7. **Releases** - versions, the `releases` and `snapshots` channels, who releases.
   8. **Reporting a vulnerability** - where, and not as a public issue.
-  9. **Licence** - the code is under the GPL; what a contribution is licensed under.
+  9. **Licence** - the code is under the GPL v3 or later; what a contribution is licensed under.
+- **Decided, and what the page says:**
+  - **A contribution comes in under the project's licence and stays under it.** Every commit carries
+    a `Signed-off-by:` line (`git commit -s`): the Developer Certificate of Origin, by which its author
+    certifies the right to submit it. No rights are transferred and there is no contributor agreement;
+    Sokar is offered under the GPL only.
+  - **Work written with an AI's help is accepted, and says so.** A person vouches for every commit with
+    their sign-off - never the agent - and the commit names the help in an `Assisted-by: <tool, model>`
+    line. Sokar's own agents' commits follow the same rule.
+  - **A pull request from outside follows an issue.** Someone who wants to change something opens a
+    GitHub issue first; once it is agreed there, a pull request is welcome. One that arrives without
+    that is closed with a pointer to this page.
 
 ## Acceptance
 
 - The page is on the documentation site in `sokar-project`'s chapter, and `mkdocs build --strict` is
   clean.
 - Every repository has a `CONTRIBUTING.md` linking the page, and its README links it too.
+- A pull request whose commits lack a `Signed-off-by:` line is marked failing by a check, seen to fail
+  on one without it.
+- The shared block of `AGENTS.md` says that every commit carries the sign-off and, where an agent wrote
+  it, the `Assisted-by:` line.
 - No rule is stated on the page that contradicts the shared block; a rule the page states is linked
   to it rather than restated.
 
 ## To be checked
 
-- Are changes from outside accepted now, and how: pull requests on GitHub, with an issue file in the
-  same pull request, or a GitHub issue first?
-- What does a contribution need: a sign-off (DCO), a signed commit, or a contributor agreement?
 - Where is a vulnerability reported: a `SECURITY.md` per repository, GitHub's private reporting, or an
   address?
 - A code of conduct: wanted, and which?

@@ -17,13 +17,14 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | [PJ17](PJ17-The-MVP.md) | now | — | The MVP: one person, one machine, Claude Code with Anthropic, local Matrix, a project from a repository - what is now, soon and later in every repository. | 0 |
 | [PJ14](PJ14-Work-Starts-Without-A-Project.md) | now; built, three points left | — | Work starts in a checked-out or picked repository without a project, in the project `default`; left: refusals naming the way for a transport or a peer, a `project.yml` named `default`, and the move to a followed project measured. | 0 |
 | [PJ21](PJ21-One-Documentation-Site-For-All-Of-Sokar.md) | now; built, publishing waits for PJ18 | — | One documentation site, `https://sokar-ai.github.io`, built in its own repository from every repository's `doc/`. | 0 |
+| [PJ28](PJ28-Code-From-Outside-Reaches-No-Secret.md) | now; before PJ18's last step | — | Before the repositories are public: `main` protected with the operator as the only bypass, `CODEOWNERS` for workflows, build files and rules, a fork's workflow waits for approval, and `check-actions` refuses `pull_request_target`. | 1 |
 | [PJ18](PJ18-Sokar-Is-Ready-To-Be-Made-Public.md) | now; last | — | Every repository ready to be made public: documentation cut, finished issues deleted, the changelog and the history one "Initial public version", the first release 0.4.0. | 0 |
 
 ## Soon
 
 | # | Status | Blocked by | What it covers | Open questions |
 |---|---|---|---|---|
-| [PJ27](PJ27-A-Contributor-Knows-The-Rules.md) | soon | — | One guide for contributors in `sokar-project`'s `doc/`, linked from every repository's README and `CONTRIBUTING.md`: how the work is organised, how a change is made, what it must satisfy. | 4 |
+| [PJ27](PJ27-A-Contributor-Knows-The-Rules.md) | soon | — | One guide for contributors in `sokar-project`'s `doc/`, linked from every repository's README and `CONTRIBUTING.md`: how the work is organised, how a change is made, what it must satisfy. | 2 |
 | [PJ15](PJ15-A-Tool-Does-Not-Change-Behind-The-Persons-Back.md) | soon | — | An MCP server's tools are pinned when a person accepts them, a change is held until accepted again, and descriptions written to steer the agent are caught. | 2 |
 | [PJ08](PJ08-An-Unattended-Jobs-Refusal-Reaches-A-Person.md) | soon | — | An unattended job's refusal reaches a person. | 2 |
 | [PJ09](PJ09-A-Gates-Green-Says-Nothing-Until-Its-Reference-Set-Can-Change.md) | soon | — | Every gate names its reference set; one that is empty, cannot change or is read by nothing is not counted as coverage. | 0 |
