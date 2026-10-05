@@ -57,4 +57,3 @@ like here, or which of the ten repositories their change belongs in.
 - Where is a vulnerability reported: a `SECURITY.md` per repository, GitHub's private reporting, or an
   address?
 - A code of conduct: wanted, and which?
-- `sokar-project` itself has no licence file yet; which licence does it get?

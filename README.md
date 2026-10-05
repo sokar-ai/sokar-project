@@ -80,3 +80,7 @@ sokar project follow sokar git@github.com:sokar-ai/sokar-project.git --signed-by
 The documentation is at <https://sokar-ai.github.io>, one chapter per repository, built from each
 repository's `doc/`. Everything `project.yml` can carry is in
 [The project file](https://sokar-ai.github.io/core/project-file/).
+
+## Licence
+
+GNU General Public License v3.0 or later — see [LICENSE](LICENSE).
