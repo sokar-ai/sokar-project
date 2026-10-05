@@ -1,6 +1,11 @@
 # PJ18 — Sokar is ready to be made public
 
-**Status:** now; the last of the MVP's Now, in every repository.
+**Status:** now; released and public. Left, all the operator's: secret scanning, push protection,
+private vulnerability reporting and Dependabot alerts in each repository; the secret `SOKAR_DOCS_READ`
+deleted, its token revoked and the site's workflow run green without it; the organization's URL and
+each repository's website link to its chapter; each repository's squash commit message set to "Pull
+request title and commit details" and merged branches deleted; then the final test from a fresh
+machine.
 
 **What must be true.** Every Sokar repository can be opened to the public: its documentation is
 short and easy for a person to read, its history is its first commit and one more, its changelog starts with that
