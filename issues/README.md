@@ -25,6 +25,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | # | Status | Blocked by | What it covers | Open questions |
 |---|---|---|---|---|
 | [PJ27](PJ27-A-Contributor-Knows-The-Rules.md) | soon | — | One guide for contributors in `sokar-project`'s `doc/`, linked from every repository's README and `CONTRIBUTING.md`: how the work is organised, how a change is made, what it must satisfy. | 2 |
+| [PJ29](PJ29-One-Code-Style-For-IDE-And-Build.md) | soon | — | One shared `.editorconfig` with the Google style in every repository, followed by the IDE and checked by the build with Spotless and `google-java-format` (AOSP: four spaces, 100 columns) in `validate`; IntelliJ with the `google-java-format` plugin. | 0 |
 | [PJ15](PJ15-A-Tool-Does-Not-Change-Behind-The-Persons-Back.md) | soon | — | An MCP server's tools are pinned when a person accepts them, a change is held until accepted again, and descriptions written to steer the agent are caught. | 2 |
 | [PJ08](PJ08-An-Unattended-Jobs-Refusal-Reaches-A-Person.md) | soon | — | An unattended job's refusal reaches a person. | 2 |
 | [PJ09](PJ09-A-Gates-Green-Says-Nothing-Until-Its-Reference-Set-Can-Change.md) | soon | — | Every gate names its reference set; one that is empty, cannot change or is read by nothing is not counted as coverage. | 0 |
