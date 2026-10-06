@@ -1,5 +1,10 @@
 # sokar
 
+<img src="doc/images/early-bird.svg" width="640" alt="Early bird - work in progress">
+
+> **Early bird - work in progress.** Sokar is not stable yet: until release 1.0.0, its code, commands
+> and file formats can change without notice.
+
 **The project.** Sokar is a hardened box an agent works in, and a gate its work leaves through.
 This repository is not part of it: it is where the project is *defined and planned*, and it holds
 no product code.
