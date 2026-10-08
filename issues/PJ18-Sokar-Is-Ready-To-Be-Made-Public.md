@@ -24,7 +24,7 @@ version, and its first release is 0.4.0.
    one deliberate exception to "the repair is never a force push", for this step only, and the
    operator pushes it.
 5. **The first release is 0.4.0.**
-6. **The documentation is published** at `https://sokar-ai.github.io` (PJ21): once the repositories
+6. **The documentation is published** at `https://sokar-ai.github.io`: once the repositories
    are public, the operator sets the variable `PUBLISH` to `true` in `sokar-ai.github.io`. The secret
    `SOKAR_DOCS_READ` stays: it reads only, and a repository that is not public yet needs it.
 
