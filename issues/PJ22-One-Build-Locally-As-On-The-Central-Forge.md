@@ -89,6 +89,13 @@ local one means changing every one of these places.
   provider or a key. No
   container gets a credential or a network path to the machine.
 - **Each run starts clean**: a fresh account or server, the commit alone, no secret of the host.
+- **One reader contract, two forges**: the build readers stay behind the one contract they already
+  share (`org.fuin.sokar.Build1`, through `sokar-build-api`), abstracted where it still speaks of one
+  forge, and a **`forgejo` reader** joins `github`, so a task reads a local build's verdict as a central
+  one's. **One contract suite**, in the API's kit, holds what every reader must do - a branch's head, a
+  commit's verdict over every run, a failing job and its log, a refused credential said plainly - and
+  runs against each reader: against GitHub centrally, against the local Forgejo locally. Only what is
+  particular to one forge's API is tested in that reader alone.
 
 ## Acceptance
 
@@ -102,10 +109,10 @@ local one means changing every one of these places.
 - An acceptance leg runs on a rented VM account locally and on a rented server centrally, through the
   same interface call; no repository outside the interface's implementation names a provider (a check
   in `sokar-buildtools` finds a name that slips in).
+- The `github` and the `forgejo` reader pass the same contract suite, each against its own forge.
 - A task asks for its work to be built on a declared machine kind and reads the verdict and the log in
   `/sokar/files`; a request for a kind or a command the project does not declare is refused.
 
 ## To be checked
 
-- **Tests that speak to the central forge itself** (the GitHub build reader's live tests): left out
-  locally, or run against the local forge's own API.
+(none open)

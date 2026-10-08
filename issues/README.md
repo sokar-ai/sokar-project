@@ -31,7 +31,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | [PJ15](PJ15-A-Tool-Does-Not-Change-Behind-The-Persons-Back.md) | soon | — | An MCP server's tools are pinned when a person accepts them, a change is held until accepted again, and descriptions written to steer the agent are caught. | 2 |
 | [PJ08](PJ08-An-Unattended-Jobs-Refusal-Reaches-A-Person.md) | soon | — | An unattended job's refusal reaches a person. | 2 |
 | [PJ09](PJ09-A-Gates-Green-Says-Nothing-Until-Its-Reference-Set-Can-Change.md) | soon | — | Every gate names its reference set; one that is empty, cannot change or is read by nothing is not counted as coverage. | 0 |
-| [PJ22](PJ22-One-Build-Locally-As-On-The-Central-Forge.md) | soon | — | One build, run locally as on the central forge: the same workflows on a local Forgejo, its registry instead of the hand-over and the public repositories, acceptance legs on a machine rented through one interface (a local VM account or a provider's server), and a task's work built the same way. | 1 |
+| [PJ22](PJ22-One-Build-Locally-As-On-The-Central-Forge.md) | soon | — | One build, run locally as on the central forge: the same workflows on a local Forgejo, its registry instead of the hand-over and the public repositories, acceptance legs on a machine rented through one interface (a local VM account or a provider's server), and a task's work built the same way, read through one reader contract by a `github` and a `forgejo` reader. | 0 |
 
 ## Later
 
