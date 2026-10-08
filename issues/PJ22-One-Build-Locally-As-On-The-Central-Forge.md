@@ -46,8 +46,11 @@ local one means changing every one of these places.
 
 ### One build, two places
 
-- **A local forge** (Forgejo with its Actions runner) mirrors the repositories and runs **the same
-  workflow files** as the central forge.
+- **A local forge, Forgejo** with its Actions runner, mirrors the repositories and runs **the same
+  workflow files** as the central forge - the one tool that runs them unchanged; where a step our
+  workflows use does not run there (an action not reachable, a variable of the central runner's image),
+  it is made a variable of the setup or mirrored, never a second workflow. The machine part is
+  `sokar-machines`', not another tool's.
 - **Its package registry** (Maven, Debian, RPM, generic) stands in for Maven Central, Sonatype's
   snapshots and the package repositories: every local build publishes into it, and every other
   repository's local build resolves from it. It replaces the hand-over directory.
@@ -86,10 +89,6 @@ local one means changing every one of these places.
 
 ## To be checked
 
-- **Forgejo or another runner**: whether Forgejo's Actions and registry cover every step our workflows
-  use (pinned actions fetched or mirrored, the runner image's environment such as `JAVA_HOME_25_X64`,
-  Debian/RPM indexes), or whether another tool fits better (Woodpecker, a GitLab runner, tmt for the
-  machine part).
 - **One OS account per run**: how a VM account is made and reset for a run, what it may do (the sudo of
   today's agent accounts), and how many a VM carries at once.
 - **What the interface offers**: is "a kind of machine" enough, and how a task's request for one is
