@@ -1,6 +1,8 @@
 # PJ21 — One documentation site for all of Sokar
 
-**Status:** now; built and checked in `sokar-ai.github.io`, publishing waits for PJ18.
+**Status:** now; built, checked and public at `https://sokar-ai.github.io`. Left: every repository's
+chapter on it (`github` once `sokar-build-github` is pushed), and proof that a change to a repository's
+`doc/` reaches the site by its next build.
 
 **What must be true.** A person finds the documentation of every part of Sokar - the CLI and daemon,
 the interface, each agent, the message transport and the filter - on one site,
@@ -33,4 +35,4 @@ misses the others, and is not rebuilt when they change.
   `doc/` at the commit or release it was built from.
 - A change to any repository's `doc/` reaches the site by the next build, and a release by its tag.
 - The workflow holds no token that can write anywhere but its own Pages.
-- After PJ18, the site is public at `https://sokar-ai.github.io`, and `SOKAR_DOCS_READ` is deleted.
+- After PJ18, the site is public at `https://sokar-ai.github.io`; `SOKAR_DOCS_READ` stays, read-only.

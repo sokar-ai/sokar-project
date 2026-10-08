@@ -1,8 +1,7 @@
 # PJ18 — Sokar is ready to be made public
 
 **Status:** now; released and public. Left, all the operator's: secret scanning, push protection,
-private vulnerability reporting and Dependabot alerts in each repository; the secret `SOKAR_DOCS_READ`
-deleted, its token revoked and the site's workflow run green without it; the organization's URL and
+private vulnerability reporting and Dependabot alerts in each repository; the organization's URL and
 each repository's website link to its chapter; each repository's squash commit message set to "Pull
 request title and commit details" and merged branches deleted; then the final test from a fresh
 machine.
@@ -26,8 +25,8 @@ version, and its first release is 0.4.0.
    operator pushes it.
 5. **The first release is 0.4.0.**
 6. **The documentation is published** at `https://sokar-ai.github.io` (PJ21): once the repositories
-   are public, the operator sets the variable `PUBLISH` to `true` in `sokar-ai.github.io`, deletes the
-   secret `SOKAR_DOCS_READ` and revokes its token.
+   are public, the operator sets the variable `PUBLISH` to `true` in `sokar-ai.github.io`. The secret
+   `SOKAR_DOCS_READ` stays: it reads only, and a repository that is not public yet needs it.
 
 ## Before step 4
 
