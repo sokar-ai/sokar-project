@@ -38,8 +38,9 @@ local one means changing every one of these places.
   and further requirements such as a GPU or a snapshot of its own - never for a provider's server type or
   location.
 - **The provider sits behind it**, chosen by the setup's configuration: a **local VM provider** that
-  rents an account on a VM (made or reset for the run, given back afterwards; a reboot is never allowed
-  there), and a **server provider** that rents from a cloud provider. Its name appears only in the one
+  rents one account of a **pool of run accounts** on a VM (four to start with, each reset when it is given
+  back; the sudo of today's agent accounts for installing packages, but **no reboot** - scenarios that
+  reboot run centrally only; the pool's size is the local limit), and a **server provider** that rents from a cloud provider. Its name appears only in the one
   implementation that talks to it.
 - **The limits are the setup's**: how many machines, or VM accounts, may be rented at once is
   configuration of the interface, which waits or refuses beyond it.
@@ -89,8 +90,6 @@ local one means changing every one of these places.
 
 ## To be checked
 
-- **One OS account per run**: how a VM account is made and reset for a run, what it may do (the sudo of
-  today's agent accounts), and how many a VM carries at once.
 - **What the interface offers**: is "a kind of machine" enough, and how a task's request for one is
   written and checked.
 - **Tests that speak to the central forge itself** (the GitHub build reader's live tests): left out
