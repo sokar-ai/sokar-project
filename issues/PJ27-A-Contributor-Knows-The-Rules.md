@@ -52,6 +52,13 @@ like here, or which of the ten repositories their change belongs in.
     GitHub issue first; once it is agreed there, a pull request is welcome. One that arrives without
     that is closed with a pointer to this page.
 
+- **The repositories' settings that a contributor meets**, set by the operator in every public
+  repository:
+  - secret scanning and push protection on, private vulnerability reporting on (section 8 points to
+    it), Dependabot alerts on;
+  - a squashed pull request's commit message is "Pull request title and commit details", and a merged
+    branch is deleted.
+
 ## Acceptance
 
 - The page is on the documentation site in `sokar-project`'s chapter, and `mkdocs build --strict` is
@@ -61,6 +68,7 @@ like here, or which of the ten repositories their change belongs in.
   on one without it.
 - The shared block of `AGENTS.md` says that every commit carries the sign-off and, where an agent wrote
   it, the `Assisted-by:` line.
+- Every public repository has the settings above; seen to fail: one that lacks any of them.
 - No rule is stated on the page that contradicts the shared block; a rule the page states is linked
   to it rather than restated.
 

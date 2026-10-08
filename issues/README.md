@@ -18,8 +18,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 | [PJ31](PJ31-Work-Comes-Back-As-A-Branch-Of-The-Checkout.md) | now; before the next push | — | One short command in the checkout a task started from brings its work back from the gate as a branch `sokar/<task>`, after the person's yes; never to a forge. | 0 |
 | [PJ17](PJ17-The-MVP.md) | now | — | The MVP: one person, one machine, Claude Code with Anthropic, local Matrix, a project from a repository - what is now, soon and later in every repository. | 0 |
 | [PJ14](PJ14-Work-Starts-Without-A-Project.md) | now; built, three points left | — | Work starts in a checked-out or picked repository without a project, in the project `default`; left: refusals naming the way for a transport or a peer, a `project.yml` named `default`, and the move to a followed project measured. | 0 |
-| [PJ28](PJ28-Code-From-Outside-Reaches-No-Secret.md) | now; before PJ18's last step | — | Before the repositories are public: `main` protected with the operator as the only bypass, `CODEOWNERS` for workflows, build files and rules, a fork's workflow waits for approval, and `check-actions` refuses `pull_request_target`. | 1 |
-| [PJ18](PJ18-Sokar-Is-Ready-To-Be-Made-Public.md) | now; released and public, the operator's settings and the final test left | — | Every repository ready to be made public: documentation cut, finished issues deleted, the changelog and the history one "Initial public version", the first release 0.4.0. | 0 |
+| [PJ28](PJ28-Code-From-Outside-Reaches-No-Secret.md) | now; the repositories are public | — | Before the repositories are public: `main` protected with the operator as the only bypass, `CODEOWNERS` for workflows, build files and rules, a fork's workflow waits for approval, and `check-actions` refuses `pull_request_target`. | 1 |
 
 ## Soon
 

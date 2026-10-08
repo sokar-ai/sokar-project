@@ -29,7 +29,7 @@ follows right after it is **soon**; the rest is **later**.
 - **`sokar`:** B102, B76.
 - **`sokar-frontend`:** F79, F71, F68, F69.
 - **`sokar-claude-code`:** CC25. **`sokar-pi`:** PI22. **`sokar-omp`:** OM17.
-- **`sokar-project`:** PJ14; then PJ18, last.
+- **`sokar-project`:** PJ14.
 
 ## Soon
 
