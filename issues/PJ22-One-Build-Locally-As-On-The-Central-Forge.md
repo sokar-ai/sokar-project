@@ -34,9 +34,25 @@ local one means changing every one of these places.
 ### One interface for rented machines
 
 - **`sokar-machines` in `sokar-buildtools`**: rent a machine of a kind, run on it, return it, list what a
-  run holds, delete what a run left behind. A caller asks for a **kind** - distribution, CPU level, size,
-  and further requirements such as a GPU or a snapshot of its own - never for a provider's server type or
-  location.
+  run holds, delete what a run left behind. A caller asks for a **kind**, never for a provider's server
+  type or location.
+- **A kind says what a run needs of its surroundings, not how large the hardware is**: the operating
+  system and its version, the architecture and CPU features (say `no-avx2`), what the run may do
+  (install packages, rootless podman, its own user manager, reach the network, reboot), a base snapshot
+  where a test assumes one, and special hardware only where needed. CPU and memory appear only as a
+  minimum or a limit where they matter: on a VM account they become the run's limits, at a provider the
+  server type rented. A project names its kinds, for example:
+
+      machines:
+        ubuntu:  { os: ubuntu-26.04, arch: x86_64, may: [packages, podman] }
+        fedora:  { os: fedora-44,    arch: x86_64, may: [packages, podman] }
+        old-cpu: { os: ubuntu-26.04, cpu: [no-avx2] }
+        restart: { os: ubuntu-26.04, may: [packages, podman, reboot] }
+
+  and its runs, each a declared command on a kind (`runs: { acceptance: { machine: ubuntu, command: … } }`).
+- **The setup says who meets a kind** - `ubuntu` a run account on the local VM or a rented server,
+  `old-cpu` an account on a machine with that CPU, `restart` a rented server only - and a kind it cannot
+  meet is refused with that said.
 - **The provider sits behind it**, chosen by the setup's configuration: a **local VM provider** that
   rents one account of a **pool of run accounts** on a VM (four to start with, each reset when it is given
   back; the sudo of today's agent accounts for installing packages, but **no reboot** - scenarios that
@@ -69,7 +85,8 @@ local one means changing every one of these places.
   workflow on the local forge or the central one, on a machine of the kind the project declares; the
   verdict, the jobs and a failing job's log reach the task as every build's do (`Task.builds`, its files).
 - **The task asks, the host decides**: the project declares the runs and the machine kinds that may be
-  used; a task may ask for one of them by name, never for a command of its own, a provider or a key. No
+  used; a task may ask for one of them by its name, never for a command of its own, a kind not declared, a
+  provider or a key. No
   container gets a credential or a network path to the machine.
 - **Each run starts clean**: a fresh account or server, the commit alone, no secret of the host.
 
@@ -90,7 +107,5 @@ local one means changing every one of these places.
 
 ## To be checked
 
-- **What the interface offers**: is "a kind of machine" enough, and how a task's request for one is
-  written and checked.
 - **Tests that speak to the central forge itself** (the GitHub build reader's live tests): left out
   locally, or run against the local forge's own API.
