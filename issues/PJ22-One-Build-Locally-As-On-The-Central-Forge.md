@@ -34,8 +34,10 @@ local one means changing every one of these places.
 ### One interface for rented machines
 
 - **`sokar-machines` in `sokar-buildtools`**: rent a machine of a kind, run on it, return it, list what a
-  run holds, delete what a run left behind. A caller asks for a **kind**, never for a provider's server
-  type or location.
+  run holds, delete what a run left behind. It already rents from a cloud provider and from local VMs,
+  and sweeps what a run left; what changes is how a caller asks: today it names the provider's server
+  types (and workflows name the provider), afterwards it asks for a **kind**, never for a provider's
+  server type or location.
 - **A kind says what a run needs of its surroundings, not how large the hardware is**: the operating
   system and its version, the architecture and CPU features (say `no-avx2`), what the run may do
   (install packages, rootless podman, its own user manager, reach the network, reboot), a base snapshot

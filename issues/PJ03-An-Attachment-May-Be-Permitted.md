@@ -14,8 +14,11 @@ missing is the policy that would permit one, and `check.urlPartSeverity` shows t
 is.
 
 **The two directions are two questions.** The filter stops the agent from sending data out; a person
-sending a file to an agent is not what it exists to stop. So inbound and outbound are separate
-settings, and outbound is the one that carries the weight.
+sending a file to an agent is not what it exists to stop. **A person already gives a running task a
+file without a message**: `sokar task give` puts it whole and read-only in `/sokar/files` (`sokar`'s
+hand-in; the interface's side is `sokar-frontend`'s F100). What is left here is a file that travels
+**inside a message** - one a person drops into the project's room or a direct chat, and above all one an
+agent sends out - and outbound is the one that carries the weight.
 
 ## The shape
 
@@ -40,7 +43,8 @@ settings, and outbound is the one that carries the weight.
 
 - Whether `raw`, `url` and `data` parts are permitted is configuration, per direction, per project
   and per peer, with every one refused by default.
-- A person can send a file to a task where an operator permitted it, and the task receives it.
+- A person can send a file to a task in a message where an operator permitted it, and the task receives
+  it in `/sokar/files`, as a handed-in file is.
 - An agent cannot send one out unless an operator permitted that separately; an attempt without the
   permission is held with a reason naming what is missing.
 - A `url` part resolving to anything but the declared host is refused at every severity.
