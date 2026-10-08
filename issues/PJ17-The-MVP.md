@@ -38,7 +38,8 @@ follows right after it is **soon**; the rest is **later**.
 - **`sokar-frontend`:** F99, F93, F91, F94, F95, F96, F97, F77, F78, F74, F59, F81, F84.
 - **`sokar-claude-code`:** CC23.
 - **`sokar-message-sluice`:** SL07, SL23.
-- **`sokar-project`:** PJ15, PJ08, PJ09, PJ20, PJ22.
+- **`sokar-project`:** PJ15, PJ08, PJ09, PJ22.
+- **`sokar-intellij`:** IJ01.
 
 ## Later
 

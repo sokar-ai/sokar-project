@@ -1,6 +1,6 @@
 # PJ21 — One documentation site for all of Sokar
 
-**Status:** now; built and checked in `sokar-ai.github.io` (Agent Core's), publishing waits for PJ18.
+**Status:** now; built and checked in `sokar-ai.github.io`, publishing waits for PJ18.
 
 **What must be true.** A person finds the documentation of every part of Sokar - the CLI and daemon,
 the interface, each agent, the message transport and the filter - on one site,

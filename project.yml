@@ -58,6 +58,21 @@ repositories:
     description: "Build and test tooling for the Sokar repositories: rented test machines, release checks and package checks"
     issues: ["BT"]
 
+  parent:
+    upstream: "git@github.com:sokar-ai/sokar-parent.git"
+    description: "The parent pom every Sokar Maven repository takes: shared build settings, plugin and tool versions"
+    issues: ["PA"]
+
+  github:
+    upstream: "git@github.com:sokar-ai/sokar-build-github.git"
+    description: "The build-server adapter for GitHub Actions: the verdict and the failing job's log of a task's build"
+    issues: ["GH"]
+
+  intellij:
+    upstream: "git@github.com:sokar-ai/sokar-intellij.git"
+    description: "The IntelliJ plugin: an agent's waiting work reviewed, approved or rejected in the IDE"
+    issues: ["IJ"]
+
   site:
     upstream: "git@github.com:sokar-ai/sokar-ai.github.io.git"
     description: "The documentation site: collects every repository's doc/ into one site on GitHub Pages"
