@@ -41,7 +41,7 @@ follows right after it is **soon**; the rest is **later**.
 - **`sokar-claude-code`:** CC23.
 - **`sokar-message-sluice`:** SL07, SL23.
 - **`sokar-ai.github.io`:** SI01.
-- **`sokar-project`:** PJ27, PJ29, PJ15, PJ08, PJ09, PJ22.
+- **`sokar-project`:** PJ27, PJ29, PJ33, PJ15, PJ08, PJ09, PJ22.
 
 ## Later
 
