@@ -51,7 +51,7 @@ follows right after it is **soon**; the rest is **later**.
 - **`sokar-claude-code`:** CC22, CC24. **`sokar-pi`:** PI21. **`sokar-omp`:** OM18, OM19, OM24.
 - **`sokar-message-matrix`:** MX12.
 - **`sokar-message-sluice`:** SL08, SL04, SL12.
-- **`sokar-project`:** PJ16, PJ03, PJ24, PJ25; candidate agents A06-A10.
+- **`sokar-project`:** PJ16, PJ32, PJ03, PJ24, PJ25; candidate agents A06-A10.
 
 ## Acceptance
 

@@ -10,6 +10,8 @@ issue, a handover rather than a copy.
 
 Within each group, ordered by what to do next; the number is identity, not sequence.
 
+**How Sokar measures up against security guidelines** is in [security-guidelines.md](security-guidelines.md); every gap to be closed links its issue there.
+
 ## Now
 
 | # | Status | Blocked by | What it covers | Open questions |
@@ -33,6 +35,7 @@ Within each group, ordered by what to do next; the number is identity, not seque
 
 | # | Status | Blocked by | What it covers | Open questions |
 |---|---|---|---|---|
+| [PJ32](PJ32-A-Vulnerability-Has-A-Way-In.md) | later | — | Whoever finds a vulnerability reports it privately through a `SECURITY.md` in every repository and one page in `doc/`; a fix gets a GitHub advisory and a changelog line. | 0 |
 | [PJ16](PJ16-An-Organisation-Decides-Which-Providers-Its-Machines-Use.md) | later | — | A root-owned machine policy names the providers tasks may use, and narrows follows, prompts and the `online` class; a developer cannot widen it. | 0 |
 | [PJ03](PJ03-An-Attachment-May-Be-Permitted.md) | later | — | Whether a message may carry more than text becomes an operator's decision, per direction, project and peer, refused by default. | 0 |
 | [A06](A06-Agent-Codex-CLI.md) | later | — | Codex CLI as a packaged agent: a candidate, brokering unverified. | 2 |
